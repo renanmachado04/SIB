@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.renan.sib.login_user"
+    android:weightSum="1">
+
+
+    <TextView
+        android:text="SIB"
+        android:gravity= "center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_weight="0.01"
+        android:textAppearance="@android:style/TextAppearance"
+        android:textSize="30sp"
+        android:lineSpacingExtra="10sp"
+        android:textColor="?android:attr/colorAccent" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:ems="10"
+        android:id="@+id/loginUs"
+        android:hint="Email"
+        android:gravity="center"
+        android:layout_weight="0.01" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:ems="10"
+        android:id="@+id/passwordUs"
+        android:hint="Password"
+        android:gravity="center"
+        android:layout_weight="0.01" />
+
+    <Button
+        android:onClick="loginUser"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:text="Login"
+        android:id="@+id/btnEnter"
+        android:layout_weight="0.01" />
+
+
+</LinearLayout>
